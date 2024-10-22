@@ -5,15 +5,26 @@ import { Injectable } from '@angular/core';
 })
 export class CalcServicesService {
 
-  private inputString: string = ''
+  private inputString: string = '0'
 
   addInput(value: string)
   {
+    if(this.inputString === '0' || this.inputString ==='NaN')
+    {
+      this.inputString = ''
+    }
     this.inputString += value
   }
   removeInput()
   {
-    this.inputString = this.inputString.slice(0, -1);
+    if(this.inputString ==='NaN')
+    {
+      this.inputString = '0'
+    }
+    else  
+    {
+      this.inputString = this.inputString.slice(0, -1);
+    }
     this.currentString();
   }  
   clearInput() {

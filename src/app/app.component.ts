@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CalcServicesService } from './services/Calculator/calc-services.service'
+import { CalcPipesPipe } from '../pipes/calculator/calc-pipes.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,
+            CalcPipesPipe,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -18,9 +20,6 @@ export class AppComponent {
   {
     this.CalcServicesService.addInput(value)
   }
-  // get removeInput() : string{
-  //   return this.CalcServicesService.getRemoveItem
-  // }
 
   calc()
   {    

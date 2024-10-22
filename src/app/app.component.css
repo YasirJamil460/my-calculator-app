@@ -1,0 +1,54 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+  }
+
+.mainDiv {
+    top: 50%;          /* Position it 50% from the top */
+  left: 50%;
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.screenDiv {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.numbers button {
+    margin: 5px;
+}
+
+.actionButtons {
+    margin-top: 10px;
+}

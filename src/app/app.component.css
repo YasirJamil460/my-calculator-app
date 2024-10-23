@@ -82,10 +82,10 @@ label{
     border-radius: 50px;
     width: 10px;
     height: 10px;
-    position: absolute;
+    position: relative;
     border: none;
-    right: 450px;
-    top: 46px;
+    bottom: 12px;
+    left: 8px;
 }
 
 .screenDiv {
@@ -150,6 +150,10 @@ label{
     padding: 7px;
     margin: 0 14px;
     width: 120px;
+}
+
+.actionButtons button:active, .numbers button:active{
+    transform: translateY(4px);
 }
 
 .equal{

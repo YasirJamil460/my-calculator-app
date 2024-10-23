@@ -3,7 +3,7 @@
 body {
     display: flex;
     font-family: "Montserrat", sans-serif;
-    font-weight:900;
+    font-weight:1000;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
     height: 100% !important;
@@ -27,7 +27,7 @@ body {
 .headerDiv h4{
     margin-bottom: 5px;
     font-family: "Montserrat", sans-serif;
-    font-weight:900;
+    font-weight:    1000;
 }
 
 label h6{
@@ -71,7 +71,7 @@ label{
     align-items: center;
     text-align: center !important;
     font-family: "Montserrat", sans-serif;
-    font-weight:900;
+    font-weight:1000;
     font-size: xx-small;
     padding-left: 9px;
 }
@@ -115,7 +115,7 @@ label{
 
 .numbers button {
     font-family: "Montserrat", sans-serif;
-    font-weight:900;
+    font-weight:1000;
     margin: 5px;
     background-color: #ebe8e8;
     padding: 5px 0;
@@ -142,7 +142,7 @@ label{
 
 .actionButtons button {
     font-family: "Montserrat", sans-serif;
-    font-weight:900;
+    font-weight:1000;
     border-radius: 5px;
     border: none;
     padding: 7px;

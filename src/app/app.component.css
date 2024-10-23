@@ -89,6 +89,8 @@ label{
 }
 
 .screenDiv {
+    font-family: "Montserrat", sans-serif;
+    font-weight:1000;
     background-color: #f0f0f0;
     padding: 10px;
     margin: 10px 0;

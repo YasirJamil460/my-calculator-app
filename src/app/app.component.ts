@@ -9,10 +9,10 @@ import { CalcPipesPipe } from '../pipes/calculator/calc-pipes.pipe';
   imports: [RouterOutlet,
             CalcPipesPipe,],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isDarkTheme: boolean = false;  
+  currentMode: number = 1;  
 
   constructor(private CalcServicesService: CalcServicesService){}
     
@@ -39,11 +39,8 @@ export class AppComponent {
     return this.currentString
   }
 
-  toggleTheme()
-  {
-    this.isDarkTheme = !this.isDarkTheme;
-    const theme = this.isDarkTheme ? 'dark-theme' : 'light-theme';
-    document.body.className = theme;
+  toggleTheme() {
+    this.currentMode = this.currentMode < 3 ? this.currentMode + 1 : 1; // Cycle through modes
   }
 
   removeInput()

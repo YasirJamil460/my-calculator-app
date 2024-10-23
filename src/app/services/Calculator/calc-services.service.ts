@@ -17,7 +17,7 @@ export class CalcServicesService {
   }
   removeInput()
   {
-    if(this.inputString ==='NaN')
+    if(this.inputString ==='NaN' || this.inputString.length == 1)
     {
       this.inputString = '0'
     }
@@ -28,7 +28,7 @@ export class CalcServicesService {
     this.currentString();
   }  
   clearInput() {
-    this.inputString = '';
+    this.inputString = '0';
   }
 
   currentString()

@@ -4,8 +4,32 @@
   <div class="headerDiv">
     <h4>calc</h4>
     <label>
-      <input type="checkbox" (change)="toggleTheme()" />
-      Theme
+      <h6>THEME</h6>
+      
+      <div class="theme">
+        
+        <div class="modes">
+          <div class="modes">
+            <input type="radio" id="mode1" name="theme" value="1" class="radio">
+            <label for="mode1" class="toggle-label">1</label>
+          </div>
+  
+          <div class="modes">
+            <input type="radio" id="mode2" name="theme" value="2" class="radio" >
+            <label for="mode2" class="toggle-label">2</label>
+          </div>
+  
+          <div class="modes">
+            <input type="radio" id="mode3" name="theme" value="3" class="radio" >
+            <label for="mode3" class="toggle-label">3</label>
+          </div>
+        </div>
+        
+        <span class="toggle-labelp2"></span>
+        <span class="ball"></span>
+        
+      </div>
+      
     </label>
   </div>
   <div class="screenDiv">
@@ -14,28 +38,28 @@
   <div class="keypad">
     <div class="numbers">
 
-    <button type="button" (click)="addInput('7')">7</button>
-    <button type="button" (click)="addInput('8')">8</button>
-    <button type="button" (click)="addInput('9')">9</button>
-    <button type="button" (click)="removeInput()">DEL</button>
-    <button type="button" (click)="addInput('4')">4</button>
-    <button type="button" (click)="addInput('5')">5</button>
-    <button type="button" (click)="addInput('6')">6</button>
-    <button type="button" (click)="addInput('+')">+</button>
-    <button type="button" (click)="addInput('1')">1</button>
-    <button type="button" (click)="addInput('2')">2</button>
-    <button type="button" (click)="addInput('3')">3</button>
-    <button type="button" (click)="addInput('-')">-</button>
-    <button type="button" (click)="addInput('.')">.</button>
-    <button type="button" (click)="addInput('0')">0</button>
-    <button type="button" (click)="addInput('/')">/</button>
-    <button type="button" (click)="addInput('*')">x</button>
+    <button (click)="addInput('7')">7</button>
+    <button (click)="addInput('8')">8</button>
+    <button (click)="addInput('9')">9</button>
+    <button class="del" (click)="removeInput()">DEL</button>
+    <button (click)="addInput('4')">4</button>
+    <button (click)="addInput('5')">5</button>
+    <button (click)="addInput('6')">6</button>
+    <button (click)="addInput('+')">+</button>
+    <button (click)="addInput('1')">1</button>
+    <button (click)="addInput('2')">2</button>
+    <button (click)="addInput('3')">3</button>
+    <button (click)="addInput('-')">-</button>
+    <button (click)="addInput('.')">.</button>
+    <button (click)="addInput('0')">0</button>
+    <button (click)="addInput('/')">/</button>
+    <button (click)="addInput('*')">x</button>
     
     </div>
     <div class="actionButtons">
     
-      <button type="button" (click)="calc()">=</button>
-      <button type="button" (click)="reset()">RESET</button>
+      <button type="button" class="reset" (click)="reset()">RESET</button>
+      <button type="button" class="equal" (click)="calc()">=</button>
     </div>
   </div>
 </div>

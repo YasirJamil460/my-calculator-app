@@ -4,3 +4,8 @@ body{
     height: 100%;
     margin: 0;
 }
+
+appRoot
+{
+    height: 100% !important;
+}

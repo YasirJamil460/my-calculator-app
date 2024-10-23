@@ -1,4 +1,4 @@
-# PracticeAngular
+# Calculator App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 
@@ -21,6 +21,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## ScreenShot
+
+![image](https://github.com/user-attachments/assets/0b88ba0c-f53c-409c-be10-6aca936c9d81)
+
 
 ## Further help
 
